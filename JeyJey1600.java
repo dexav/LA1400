@@ -59,19 +59,19 @@ public class JeyJey1600 extends JuniorRobot
 	public void onHitByBullet() {
 		
 		if (hitByBulletAngle != -1) {
-            turnRight(hitByBulletAngle);
-			turnRight(east);
-            ahead(fieldHeight / 2);
-        }
+          	  	turnRight(hitByBulletAngle);
+		  	turnRight(east);
+            	  	ahead(fieldHeight / 2);
+        	}
 		
 	}
 
 	public void onHitWall() {
 		if (hitWallAngle != -1) {
-           	turnRight(hitWallAngle);
-           	back(fieldHeight / 4);
-            turnRight(east);
-        }
+           		turnRight(hitWallAngle);
+           		back(fieldHeight / 4);
+           		turnRight(east);
+        	}
 	}	
 
 }
